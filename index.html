@@ -1,0 +1,102 @@
+<!doctype html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="./output.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/daisyui@4.9.0/dist/full.min.css" rel="stylesheet" type="text/css" />
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;1,300&display=swap"
+    rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    .roboto-medium {
+      font-family: "Roboto", sans-serif;
+      font-weight: 500;
+      font-style: normal;
+    }
+
+    .roboto-regular {
+      font-family: "Roboto", sans-serif;
+      font-weight: 400;
+      font-style: normal;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="w-full h-screen bg-[#427D9D]">
+    <div class="navbar flex justify-center  py-2">
+      <div class="flex">
+        <div class="w-10 rounded-full">
+          <img alt="Tailwind CSS Navbar component" src="GKL10_logo-kabupaten-karawang - Koleksilogo.com.png" />
+        </div>
+        <h1 class="text-xl ms-2 roboto-medium text-white">UPTD Balai Latihan Kerja Kabupaten Karawang</h1>
+      </div>
+    </div>
+    <div class="flex justify-center mt-[60px]">
+      <div class="w-[70%] flex">
+        <div class="w-[30%]">
+          <div>
+            <h1 class="text-4xl roboto-medium text-white">Pendaftaran Pelatihan APBN</h1>
+            <h2 class="roboto-regular text-sm text-white">Silahkan isi dengan lengkap</h2>
+          </div>
+          <div>
+            <ul class="steps steps-vertical roboto-regular">
+              <li class="step step-primary text-white">Data Diri</li>
+              <li class="step step-primary text-white">Alamat Lengkap</li>
+              <li class="step text-white">Pendidikan</li>
+              <li class="step text-white">Persetujuan</li>
+            </ul>
+          </div>
+        </div>
+        <div class="w-[70%] bg-white px-6 py-4 rounded-lg">
+          <div class="navbar">
+            <div class="flex-1 flex-col">
+              <h1 class="text-3xl roboto-medium me-auto">Alamat Lengkap</h1>
+              <h3 class="me-auto text-xs roboto-regular opacity-85">*Harap isi Alamat Lengkap sesuai Kartu Tanda Penduduk</h3>
+            </div>
+          </div>
+          <div class="flex flex-wrap">
+            <div class="flex py-3 justify-around w-full">
+              <label class="form-control w-full max-w-xs me-4">
+                <div class="label">
+                  <span class="label-text roboto-medium">Dusun</span>
+                </div>
+                <input type="text" placeholder="Contoh: Dusun Desa Baru" class="input input-bordered w-full max-w-xs" />
+              </label>
+              <label class="form-control w-full max-w-xs">
+                <div class="label">
+                  <span class="label-text roboto-medium">Desa</span>
+                </div>
+                <input type="text" placeholder="Contoh: Desa Maju Jaya" class="input input-bordered w-full max-w-xs" />
+              </label>
+            </div>
+            <div class="flex py-3 justify-around w-full">
+              <label class="form-control w-full max-w-xs me-4">
+                <div class="label">
+                  <span class="label-text roboto-medium">Kecamatan</span>
+                </div>
+                <input type="text" placeholder="Contoh: Kecamatan Telagasari" class="input input-bordered w-full max-w-xs" />
+              </label>
+              <label class="form-control w-full max-w-xs">
+                <div class="label">
+                  <span class="label-text roboto-medium">Kabupaten</span>
+                </div>
+                <input type="text" placeholder="Contoh: Kabupaten Karawang" class="input input-bordered w-full max-w-xs" />
+              </label>
+            </div>
+          </div>
+          <div class="flex w-full pt-4">
+            <div class="join ms-auto">
+              <button class="join-item btn hover:bg-[#427D9D] hover:text-white">Previous</button>
+              <button class="join-item btn bg-[#427D9D] text-white hover:text-black">Next</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>
